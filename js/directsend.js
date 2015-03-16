@@ -88,7 +88,7 @@
 
     DirectSend.prototype.createTransfer = function(callback) {
         $.ajax({
-            url: 'http://api.directsend.io/transfer',
+            url: 'https://api.directsend.io/transfer',
             type: 'POST',
             cache: false,
             dataType: 'json',
@@ -96,7 +96,7 @@
                 callback(true);
             },
             success: function(data) {
-                var url = 'http://' + data.hostname + '/transfer/' + data.id;
+                var url = 'https://' + data.hostname + '/transfer/' + data.id;
 
                 callback(false, url);
             }
