@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="DirectSend, a fast, free, and secure way to send files. No sign-up required.">
+        <meta name="keywords" content="DirectSend, file, share, send, transfer, filesharing, fileshare">
+        <meta name="author" content="Patrick Stankard">
+        <title>DirectSend</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/directsend.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="center-block">
+                        <h1 class="text-center">DirectSend</h1>
+                        <p class="text-center">A fast, free, and secure way to send files. No sign-up required.</p>
+                        <p class="text-center">
+                            <span id="btn-file" class="btn btn-primary btn-md" role="button">
+                                Send a file <input type="file">
+                            </span>
+                        </p>
+                    </div>
+                    <div id="error-modal" class="modal fade">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title">Error</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>An error has occured. Please try again.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="send-file-modal" class="modal fade">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title">Send File</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>To begin the transfer, have the recipient open this URL:</p>
+                                    <input id="transfer-url" class="form-control" type="text">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="success-modal" class="modal fade">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title">Success</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Your file has been sent successfully.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- JS -->
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/directsend.js"></script>
+    </body>
+</html>
